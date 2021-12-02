@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch ErcApplication",
+            "request": "launch",
+            "mainClass": "id.demo.event.ErcApplication",
+            "env": {
+                "SERVER_PORT": "90094",
+                "KAFKA_URL_ADDRESSES": "localhost:9092"
+            }
+        }
+    ]
+}

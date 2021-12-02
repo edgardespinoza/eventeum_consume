@@ -1,0 +1,19 @@
+server:
+  port: ${SERVER_PORT}
+---
+spring:
+  banner:
+    location: banner.txt
+  kafka:
+    consumer:
+      group-id: eth-consumer
+      auto-offset-reset: earliest
+    # change this property if you are using your own
+    # Kafka cluster or your Docker IP is different
+    bootstrap-servers: ${KAFKA_URL_ADDRESSES}
+
+---
+app:
+  kafka:
+    consumer:
+      topic: contract-events
